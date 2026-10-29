@@ -1,0 +1,1476 @@
+{
+  "devices": {
+    "id-96c386c9-c8b7-45fa-b2b8-3ff6022ee083": {
+      "id": "id-96c386c9-c8b7-45fa-b2b8-3ff6022ee083",
+      "type": "Router",
+      "name": "Internet",
+      "mac": "D1:75:ED:82:F6:F3",
+      "x": 120,
+      "y": 90,
+      "interfaces": {
+        "Gig0/0": {
+          "id": "Gig0/0",
+          "type": "ethernet",
+          "ip": "0.0.0.0",
+          "subnet": "0.0.0.0",
+          "mac": "86:78:77:B3:CB:99",
+          "connectedLink": "id-d0aa587d-15bd-488a-8c3e-a76f83007132",
+          "adminState": "down"
+        },
+        "Gig0/1": {
+          "id": "Gig0/1",
+          "type": "ethernet",
+          "ip": "0.0.0.0",
+          "subnet": "0.0.0.0",
+          "mac": "83:36:95:83:A8:CB",
+          "connectedLink": null,
+          "adminState": "down"
+        },
+        "Se0/0/0": {
+          "id": "Se0/0/0",
+          "type": "serial",
+          "ip": "0.0.0.0",
+          "subnet": "0.0.0.0",
+          "mac": "A9:E6:55:AB:57:C1",
+          "connectedLink": null,
+          "adminState": "down"
+        },
+        "Se0/0/1": {
+          "id": "Se0/0/1",
+          "type": "serial",
+          "ip": "0.0.0.0",
+          "subnet": "0.0.0.0",
+          "mac": "94:DE:B3:18:1A:EB",
+          "connectedLink": null,
+          "adminState": "down"
+        }
+      },
+      "routingTable": [],
+      "staticRoutes": [],
+      "dhcpPools": {},
+      "dhcpExcluded": [],
+      "ospf": {
+        "enabled": false,
+        "processId": null,
+        "routerId": null,
+        "networks": []
+      },
+      "ospfNeighbors": [],
+      "eigrp": {
+        "enabled": false,
+        "asn": null,
+        "networks": []
+      },
+      "eigrpNeighbors": [],
+      "bgp": {
+        "enabled": false,
+        "asn": null,
+        "neighbors": [],
+        "networks": []
+      },
+      "bgpTable": [],
+      "bgpPeers": [],
+      "arpCache": {},
+      "ripEnabled": false,
+      "ripBroadcastCount": 0,
+      "cdpEnabled": true,
+      "lldpEnabled": false,
+      "cli": {
+        "mode": "user",
+        "prompt": "ISP Router 1>",
+        "history": [],
+        "currentInterface": null
+      },
+      "isISP": true,
+      "openTcpPorts": {}
+    },
+    "id-3e4459d6-c23d-4d58-a0c0-6e8e72032c62": {
+      "id": "id-3e4459d6-c23d-4d58-a0c0-6e8e72032c62",
+      "type": "Router",
+      "name": "FW-Edge",
+      "mac": "C1:99:E8:41:8F:2E",
+      "x": 320,
+      "y": 110,
+      "interfaces": {
+        "port1": {
+          "id": "port1",
+          "type": "ethernet",
+          "ip": "192.168.1.99",
+          "subnet": "255.255.255.0",
+          "mac": "12:21:FA:59:90:6E",
+          "connectedLink": "id-2a66bca3-fc85-4630-b037-cf273cbc2752",
+          "adminState": "up"
+        },
+        "port2": {
+          "id": "port2",
+          "type": "ethernet",
+          "ip": "0.0.0.0",
+          "subnet": "0.0.0.0",
+          "mac": "A1:AE:9E:F2:B4:34",
+          "connectedLink": "id-d0aa587d-15bd-488a-8c3e-a76f83007132",
+          "adminState": "up"
+        },
+        "port3": {
+          "id": "port3",
+          "type": "ethernet",
+          "ip": "0.0.0.0",
+          "subnet": "0.0.0.0",
+          "mac": "6E:75:0D:C8:A1:34",
+          "connectedLink": "id-37e88564-62cb-46e2-8a2a-36274a1f8ed7",
+          "adminState": "up"
+        },
+        "port4": {
+          "id": "port4",
+          "type": "ethernet",
+          "ip": "0.0.0.0",
+          "subnet": "0.0.0.0",
+          "mac": "4B:23:0B:E5:6D:41",
+          "connectedLink": null,
+          "adminState": "up"
+        }
+      },
+      "routingTable": [
+        {
+          "network": "192.168.1.0",
+          "mask": "255.255.255.0",
+          "nextHop": "0.0.0.0",
+          "interface": "port1",
+          "metric": 0,
+          "type": "C",
+          "ad": 0
+        }
+      ],
+      "staticRoutes": [],
+      "dhcpPools": {},
+      "dhcpExcluded": [],
+      "ospf": {
+        "enabled": false,
+        "processId": null,
+        "routerId": null,
+        "networks": []
+      },
+      "ospfNeighbors": [],
+      "eigrp": {
+        "enabled": false,
+        "asn": null,
+        "networks": []
+      },
+      "eigrpNeighbors": [],
+      "bgp": {
+        "enabled": false,
+        "asn": null,
+        "neighbors": [],
+        "networks": []
+      },
+      "bgpTable": [],
+      "bgpPeers": [],
+      "arpCache": {},
+      "ripEnabled": false,
+      "ripBroadcastCount": 0,
+      "cdpEnabled": true,
+      "lldpEnabled": false,
+      "cli": {
+        "mode": "user",
+        "prompt": "Firewall1>",
+        "history": [],
+        "currentInterface": null
+      },
+      "isFirewall": true,
+      "fw": {
+        "zones": {
+          "port1": "inside",
+          "port2": "outside",
+          "port3": "dmz",
+          "port4": ""
+        },
+        "access": {
+          "port1": [
+            "https",
+            "ping"
+          ],
+          "port2": [],
+          "port3": [],
+          "port4": []
+        },
+        "routes": [],
+        "addresses": [],
+        "addrGroups": [],
+        "services": [],
+        "svcGroups": [],
+        "policies": [],
+        "vips": [],
+        "webFilter": {
+          "categories": {
+            "Malicious Websites": "block",
+            "Phishing": "block"
+          },
+          "urls": []
+        },
+        "ips": {
+          "enabled": true,
+          "sigs": {
+            "3001": "block",
+            "3002": "monitor",
+            "3003": "block",
+            "3004": "monitor",
+            "3005": "monitor"
+          },
+          "quarantineSecs": 60
+        },
+        "admins": [
+          {
+            "user": "admin",
+            "pass": "admin",
+            "role": "super_admin"
+          }
+        ],
+        "logging": {
+          "syslogEnabled": false,
+          "syslogServer": "",
+          "logImplicitDeny": true,
+          "logLocalIn": true
+        },
+        "nextId": 1
+      },
+      "openTcpPorts": {}
+    },
+    "id-4af2a395-3f95-4aac-b91e-980d257e2626": {
+      "id": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "type": "Switch",
+      "name": "SW-Core",
+      "mac": "1E:12:67:1F:67:50",
+      "x": 320,
+      "y": 300,
+      "ports": [
+        {
+          "id": 1,
+          "media": "copper",
+          "connectedLink": "id-2a66bca3-fc85-4630-b037-cf273cbc2752",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 2,
+          "media": "copper",
+          "connectedLink": "id-c4d39f23-dfa0-40b1-9bc4-c16544acc9a1",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 3,
+          "media": "copper",
+          "connectedLink": "id-b3958163-e045-4235-8f8e-aed437317215",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 4,
+          "media": "copper",
+          "connectedLink": "id-dd8e969d-6c54-4b3b-84a1-37e18ed2800f",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 5,
+          "media": "copper",
+          "connectedLink": "id-5f10215b-ded9-411a-8bb9-f406bd3798b7",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 6,
+          "media": "copper",
+          "connectedLink": "id-46b31afd-0365-4024-a08d-e463ca805ff9",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 7,
+          "media": "copper",
+          "connectedLink": "id-8011dc7f-0015-493c-ac36-08a13d7318aa",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 8,
+          "media": "copper",
+          "connectedLink": "id-1e6dd6d5-2d60-44b2-89c6-7d3420a9cdac",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 9,
+          "media": "copper",
+          "connectedLink": "id-ffb4f6ba-02f4-4e76-a5ce-d6136a2cb151",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 10,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 11,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 12,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 13,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 14,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 15,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 16,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 17,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 18,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 19,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 20,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 21,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 22,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 23,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 24,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 25,
+          "gi": 1,
+          "media": "fiber",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 26,
+          "gi": 2,
+          "media": "fiber",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        }
+      ],
+      "macTable": {},
+      "stp": {
+        "rootBridge": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+        "costToRoot": 19,
+        "rootPort": 7,
+        "nextHopMac": null,
+        "nextHopPort": null
+      },
+      "svis": {},
+      "ipRouting": false,
+      "arpCache": {},
+      "vlanDb": {
+        "1": "default"
+      },
+      "vtp": {
+        "domain": "",
+        "mode": "server",
+        "revision": 0,
+        "version": 1
+      },
+      "stpMode": "pvst",
+      "stpPriority": {},
+      "stpVlan": {
+        "1": {
+          "rootBridge": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+          "rootMac": "18:FC:10:A0:F7:BE",
+          "priority": 32768,
+          "rootPriority": 32768,
+          "costToRoot": 19,
+          "rootPort": 7
+        }
+      },
+      "cdpEnabled": true,
+      "lldpEnabled": false,
+      "cli": {
+        "mode": "priv",
+        "prompt": "SW-Core#",
+        "history": [],
+        "currentInterface": null,
+        "lineType": "vty",
+        "currentVlan": null,
+        "routerProto": null,
+        "aclName": null,
+        "rangePorts": null,
+        "dhcpPool": null
+      },
+      "servicePwEnc": true,
+      "enablePassword": "StrongSecret1",
+      "vty": {
+        "transport": "ssh",
+        "login": "local",
+        "password": "letmein"
+      },
+      "consoleLine": {
+        "login": "password",
+        "password": "console"
+      },
+      "openTcpPorts": {},
+      "users": {
+        "admin": "AdminPass1"
+      },
+      "userPriv": {
+        "admin": 15
+      },
+      "domainName": "riverstone.health",
+      "rsaKey": true
+    },
+    "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc": {
+      "id": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+      "type": "Switch",
+      "name": "SW-Access",
+      "mac": "18:FC:10:A0:F7:BE",
+      "x": 560,
+      "y": 300,
+      "ports": [
+        {
+          "id": 1,
+          "media": "copper",
+          "connectedLink": "id-60fb8f1e-a877-4de5-adf9-535ad4dd7951",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 2,
+          "media": "copper",
+          "connectedLink": "id-779033a4-2347-4689-acf4-20f793953fd7",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 3,
+          "media": "copper",
+          "connectedLink": "id-d4ff2878-8631-40fd-9fda-7787466f6ebb",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 4,
+          "media": "copper",
+          "connectedLink": "id-a8d5bebc-9129-45c8-83b3-f987594b55b9",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 5,
+          "media": "copper",
+          "connectedLink": "id-8011dc7f-0015-493c-ac36-08a13d7318aa",
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 6,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 7,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 8,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 9,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 10,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 11,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 12,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 13,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 14,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 15,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 16,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 17,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 18,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 19,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 20,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 21,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 22,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 23,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 24,
+          "media": "copper",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 25,
+          "gi": 1,
+          "media": "fiber",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        },
+        {
+          "id": 26,
+          "gi": 2,
+          "media": "fiber",
+          "connectedLink": null,
+          "stpState": "forwarding",
+          "adminState": "up",
+          "vlan": 1,
+          "mode": "access"
+        }
+      ],
+      "macTable": {},
+      "stp": {
+        "rootBridge": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+        "costToRoot": 0,
+        "rootPort": null,
+        "nextHopMac": null,
+        "nextHopPort": null
+      },
+      "svis": {},
+      "ipRouting": false,
+      "arpCache": {},
+      "vlanDb": {
+        "1": "default"
+      },
+      "vtp": {
+        "domain": "",
+        "mode": "server",
+        "revision": 0,
+        "version": 1
+      },
+      "stpMode": "pvst",
+      "stpPriority": {},
+      "stpVlan": {
+        "1": {
+          "rootBridge": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+          "rootMac": "18:FC:10:A0:F7:BE",
+          "priority": 32768,
+          "rootPriority": 32768,
+          "costToRoot": 0,
+          "rootPort": null
+        }
+      },
+      "cdpEnabled": true,
+      "lldpEnabled": false,
+      "cli": {
+        "mode": "priv",
+        "prompt": "SW-Access#",
+        "history": [],
+        "currentInterface": null,
+        "lineType": "console",
+        "currentVlan": null,
+        "routerProto": null,
+        "aclName": null,
+        "rangePorts": null,
+        "dhcpPool": null
+      },
+      "servicePwEnc": true,
+      "enablePassword": "cisco123",
+      "vty": {
+        "transport": "telnet",
+        "login": "password",
+        "password": "letmein"
+      },
+      "consoleLine": {
+        "login": "password",
+        "password": "console"
+      },
+      "openTcpPorts": {}
+    },
+    "id-14e85147-31d3-4216-a825-8d80d815b7a3": {
+      "id": "id-14e85147-31d3-4216-a825-8d80d815b7a3",
+      "type": "WebServer",
+      "name": "Web-Portal",
+      "mac": "BE:83:DF:DB:49:DE",
+      "x": 150,
+      "y": 300,
+      "ip": "192.168.1.80",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "0.0.0.0",
+      "port": "id-37e88564-62cb-46e2-8a2a-36274a1f8ed7",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      },
+      "httpEnabled": false,
+      "httpsEnabled": false,
+      "ftpEnabled": false,
+      "sftpEnabled": false,
+      "tftpEnabled": false,
+      "tftpFiles": {},
+      "ftpUsers": {
+        "cisco": "cisco"
+      },
+      "files": {
+        "readme.txt": "Welcome to the file server.\nDownload me over FTP (port 21) or SFTP (port 22).\n",
+        "backup.cfg": "hostname LAB-DEVICE\n!\nend\n"
+      },
+      "_placeholderHttp": true,
+      "htmlContent": "<!DOCTYPE html>\n<html>\n<head>\n<title>My Server</title>\n<style>\n  body { font-family: sans-serif; text-align: center; padding-top: 50px; color: #334155; }\n  h1 { color: #2563eb; }\n</style>\n</head>\n<body>\n  <h1>Welcome to Web Server 1</h1>\n  <p>Your HTTP request was completely successful!</p>\n</body>\n</html>",
+      "dualHomed": false,
+      "port2": null
+    },
+    "id-0a40f7f7-f68c-4588-9a28-e3cd9bf68320": {
+      "id": "id-0a40f7f7-f68c-4588-9a28-e3cd9bf68320",
+      "type": "DNSServer",
+      "name": "DNS-Server",
+      "mac": "E4:F5:2F:99:7F:A8",
+      "x": 200,
+      "y": 460,
+      "ip": "192.168.1.53",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "192.168.1.53",
+      "port": "id-c4d39f23-dfa0-40b1-9bc4-c16544acc9a1",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      },
+      "dnsEnabled": false,
+      "records": {
+        "www.server.local": "192.168.1.100",
+        "google.com": "8.8.8.8"
+      },
+      "dualHomed": false,
+      "port2": null
+    },
+    "id-682a0d22-0f8e-475b-802d-6ad0c68c524d": {
+      "id": "id-682a0d22-0f8e-475b-802d-6ad0c68c524d",
+      "type": "Server",
+      "name": "Clinical-Records",
+      "mac": "8F:48:F0:55:45:93",
+      "x": 330,
+      "y": 470,
+      "ip": "192.168.1.20",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "192.168.1.53",
+      "port": "id-b3958163-e045-4235-8f8e-aed437317215",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      },
+      "dhcpEnabled": false,
+      "poolStart": "192.168.1.100",
+      "poolEnd": "192.168.1.200",
+      "poolMask": "255.255.255.0",
+      "poolGateway": "192.168.1.1",
+      "poolDns": "8.8.8.8",
+      "leaseTime": "86400",
+      "leases": {},
+      "dualHomed": false,
+      "port2": null
+    },
+    "id-2f99c44a-ebe8-46e3-bfda-657907a772e1": {
+      "id": "id-2f99c44a-ebe8-46e3-bfda-657907a772e1",
+      "type": "Server",
+      "name": "Backup-Server",
+      "mac": "A2:E0:32:AE:0F:0C",
+      "x": 440,
+      "y": 470,
+      "ip": "192.168.1.30",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "192.168.1.53",
+      "port": "id-dd8e969d-6c54-4b3b-84a1-37e18ed2800f",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      },
+      "dhcpEnabled": false,
+      "poolStart": "192.168.1.100",
+      "poolEnd": "192.168.1.200",
+      "poolMask": "255.255.255.0",
+      "poolGateway": "192.168.1.1",
+      "poolDns": "8.8.8.8",
+      "leaseTime": "86400",
+      "leases": {},
+      "dualHomed": false,
+      "port2": null
+    },
+    "id-485b993a-5ecc-4a62-b768-3a71e4b950b0": {
+      "id": "id-485b993a-5ecc-4a62-b768-3a71e4b950b0",
+      "type": "Server",
+      "name": "Log-Server",
+      "mac": "93:78:1C:EF:7A:F3",
+      "x": 120,
+      "y": 470,
+      "ip": "192.168.1.40",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "192.168.1.53",
+      "port": "id-5f10215b-ded9-411a-8bb9-f406bd3798b7",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      },
+      "dhcpEnabled": false,
+      "poolStart": "192.168.1.100",
+      "poolEnd": "192.168.1.200",
+      "poolMask": "255.255.255.0",
+      "poolGateway": "192.168.1.1",
+      "poolDns": "8.8.8.8",
+      "leaseTime": "86400",
+      "leases": {},
+      "dualHomed": false,
+      "port2": null
+    },
+    "id-06c8f31f-2232-41d0-9327-6d93b6b6f612": {
+      "id": "id-06c8f31f-2232-41d0-9327-6d93b6b6f612",
+      "type": "Server",
+      "name": "Identity-Server",
+      "mac": "4C:D6:59:4C:E2:1C",
+      "x": 40,
+      "y": 400,
+      "ip": "192.168.1.60",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "192.168.1.53",
+      "port": "id-46b31afd-0365-4024-a08d-e463ca805ff9",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      },
+      "dhcpEnabled": false,
+      "poolStart": "192.168.1.100",
+      "poolEnd": "192.168.1.200",
+      "poolMask": "255.255.255.0",
+      "poolGateway": "192.168.1.1",
+      "poolDns": "8.8.8.8",
+      "leaseTime": "86400",
+      "leases": {},
+      "dualHomed": false,
+      "port2": null,
+      "directory": [
+        {
+          "name": "rskinner",
+          "display": "R. Skinner (Reception)",
+          "role": "reception",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": false,
+          "lastLoginDays": 1
+        },
+        {
+          "name": "achen",
+          "display": "A. Chen (Clinician)",
+          "role": "clinical",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": false,
+          "lastLoginDays": 2
+        },
+        {
+          "name": "dpatel",
+          "display": "D. Patel (Clinician)",
+          "role": "clinical",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "itadmin",
+          "display": "IT Administrator",
+          "role": "it",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "frontdesk",
+          "display": "Shared front-desk login",
+          "role": "reception",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": false,
+          "shared": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jmorrow",
+          "display": "J. Morrow (has left)",
+          "role": "clinical",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": false,
+          "departed": true,
+          "lastLoginDays": 95
+        }
+      ]
+    },
+    "id-d228a6dd-4f5b-4787-988e-78dcb3aa4ef2": {
+      "id": "id-d228a6dd-4f5b-4787-988e-78dcb3aa4ef2",
+      "type": "PC",
+      "name": "PC-Reception1",
+      "mac": "85:D8:75:15:5D:2C",
+      "x": 700,
+      "y": 180,
+      "ip": "192.168.1.101",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "192.168.1.53",
+      "port": "id-60fb8f1e-a877-4de5-adf9-535ad4dd7951",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      }
+    },
+    "id-1a1c5837-b134-4c05-90ec-2f4a7dd0c7ad": {
+      "id": "id-1a1c5837-b134-4c05-90ec-2f4a7dd0c7ad",
+      "type": "PC",
+      "name": "PC-Reception2",
+      "mac": "32:1A:13:29:E3:51",
+      "x": 760,
+      "y": 250,
+      "ip": "192.168.1.102",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "192.168.1.53",
+      "port": "id-779033a4-2347-4689-acf4-20f793953fd7",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      }
+    },
+    "id-fe5d5ae7-5990-4bfc-aeef-2ca9c49569fa": {
+      "id": "id-fe5d5ae7-5990-4bfc-aeef-2ca9c49569fa",
+      "type": "PC",
+      "name": "PC-Clinical1",
+      "mac": "92:66:B7:17:66:81",
+      "x": 700,
+      "y": 360,
+      "ip": "192.168.1.111",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "192.168.1.53",
+      "port": "id-d4ff2878-8631-40fd-9fda-7787466f6ebb",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      }
+    },
+    "id-ab6401ce-46b3-4bed-9624-a47ad6a4a633": {
+      "id": "id-ab6401ce-46b3-4bed-9624-a47ad6a4a633",
+      "type": "PC",
+      "name": "PC-Clinical2",
+      "mac": "1D:02:6D:60:03:C1",
+      "x": 760,
+      "y": 430,
+      "ip": "192.168.1.112",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "192.168.1.53",
+      "port": "id-a8d5bebc-9129-45c8-83b3-f987594b55b9",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      }
+    },
+    "id-a0eafc51-dc01-4efc-b987-27ce4d177a2b": {
+      "id": "id-a0eafc51-dc01-4efc-b987-27ce4d177a2b",
+      "type": "WebServer",
+      "name": "WLC-Guest",
+      "mac": "3F:FE:66:62:64:FF",
+      "x": 560,
+      "y": 110,
+      "ip": "192.168.1.10",
+      "subnet": "255.255.255.0",
+      "gateway": "0.0.0.0",
+      "dns": "0.0.0.0",
+      "port": "id-1e6dd6d5-2d60-44b2-89c6-7d3420a9cdac",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      },
+      "httpEnabled": true,
+      "httpsEnabled": false,
+      "ftpEnabled": false,
+      "sftpEnabled": false,
+      "tftpEnabled": false,
+      "tftpFiles": {},
+      "ftpUsers": {
+        "cisco": "cisco"
+      },
+      "files": {
+        "readme.txt": "Welcome to the file server.\nDownload me over FTP (port 21) or SFTP (port 22).\n",
+        "backup.cfg": "hostname LAB-DEVICE\n!\nend\n"
+      },
+      "_placeholderHttp": true,
+      "dualHomed": false,
+      "port2": null,
+      "isWlc": true,
+      "mgmtVlan": 99,
+      "dynamicInterfaces": [],
+      "wlans": []
+    },
+    "id-566af8f8-4249-4c8d-8358-3bb5656f31dc": {
+      "id": "id-566af8f8-4249-4c8d-8358-3bb5656f31dc",
+      "type": "AP",
+      "name": "AP-Waiting",
+      "mac": "EE:8F:CD:2F:94:BA",
+      "x": 620,
+      "y": 200,
+      "ports": [
+        {
+          "id": 1,
+          "connectedLink": "id-ffb4f6ba-02f4-4e76-a5ce-d6136a2cb151",
+          "stpState": "forwarding",
+          "adminState": "up"
+        }
+      ],
+      "macTable": {},
+      "ssid": "WiFi_AP1",
+      "band": "2.4",
+      "security": "WPA2",
+      "password": "",
+      "controllerIp": "",
+      "openTcpPorts": {}
+    }
+  },
+  "links": {
+    "id-d0aa587d-15bd-488a-8c3e-a76f83007132": {
+      "id": "id-d0aa587d-15bd-488a-8c3e-a76f83007132",
+      "source": "id-96c386c9-c8b7-45fa-b2b8-3ff6022ee083",
+      "target": "id-3e4459d6-c23d-4d58-a0c0-6e8e72032c62",
+      "sourcePort": "Gig0/0",
+      "targetPort": "port2",
+      "media": "copper",
+      "_cx": 220,
+      "_cy": 100
+    },
+    "id-2a66bca3-fc85-4630-b037-cf273cbc2752": {
+      "id": "id-2a66bca3-fc85-4630-b037-cf273cbc2752",
+      "source": "id-3e4459d6-c23d-4d58-a0c0-6e8e72032c62",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "sourcePort": "port1",
+      "targetPort": 1,
+      "media": "copper",
+      "_cx": 320,
+      "_cy": 205
+    },
+    "id-37e88564-62cb-46e2-8a2a-36274a1f8ed7": {
+      "id": "id-37e88564-62cb-46e2-8a2a-36274a1f8ed7",
+      "source": "id-14e85147-31d3-4216-a825-8d80d815b7a3",
+      "target": "id-3e4459d6-c23d-4d58-a0c0-6e8e72032c62",
+      "sourcePort": null,
+      "targetPort": "port3",
+      "media": "copper",
+      "_cx": 235,
+      "_cy": 205
+    },
+    "id-c4d39f23-dfa0-40b1-9bc4-c16544acc9a1": {
+      "id": "id-c4d39f23-dfa0-40b1-9bc4-c16544acc9a1",
+      "source": "id-0a40f7f7-f68c-4588-9a28-e3cd9bf68320",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "sourcePort": null,
+      "targetPort": 2,
+      "media": "copper",
+      "_cx": 260,
+      "_cy": 380
+    },
+    "id-b3958163-e045-4235-8f8e-aed437317215": {
+      "id": "id-b3958163-e045-4235-8f8e-aed437317215",
+      "source": "id-682a0d22-0f8e-475b-802d-6ad0c68c524d",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "sourcePort": null,
+      "targetPort": 3,
+      "media": "copper",
+      "_cx": 325,
+      "_cy": 385
+    },
+    "id-dd8e969d-6c54-4b3b-84a1-37e18ed2800f": {
+      "id": "id-dd8e969d-6c54-4b3b-84a1-37e18ed2800f",
+      "source": "id-2f99c44a-ebe8-46e3-bfda-657907a772e1",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "sourcePort": null,
+      "targetPort": 4,
+      "media": "copper",
+      "_cx": 380,
+      "_cy": 385
+    },
+    "id-5f10215b-ded9-411a-8bb9-f406bd3798b7": {
+      "id": "id-5f10215b-ded9-411a-8bb9-f406bd3798b7",
+      "source": "id-485b993a-5ecc-4a62-b768-3a71e4b950b0",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "sourcePort": null,
+      "targetPort": 5,
+      "media": "copper",
+      "_cx": 220,
+      "_cy": 385
+    },
+    "id-46b31afd-0365-4024-a08d-e463ca805ff9": {
+      "id": "id-46b31afd-0365-4024-a08d-e463ca805ff9",
+      "source": "id-06c8f31f-2232-41d0-9327-6d93b6b6f612",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "sourcePort": null,
+      "targetPort": 6,
+      "media": "copper",
+      "_cx": 180,
+      "_cy": 350
+    },
+    "id-60fb8f1e-a877-4de5-adf9-535ad4dd7951": {
+      "id": "id-60fb8f1e-a877-4de5-adf9-535ad4dd7951",
+      "source": "id-d228a6dd-4f5b-4787-988e-78dcb3aa4ef2",
+      "target": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+      "sourcePort": null,
+      "targetPort": 1,
+      "media": "copper",
+      "_cx": 630,
+      "_cy": 240
+    },
+    "id-779033a4-2347-4689-acf4-20f793953fd7": {
+      "id": "id-779033a4-2347-4689-acf4-20f793953fd7",
+      "source": "id-1a1c5837-b134-4c05-90ec-2f4a7dd0c7ad",
+      "target": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+      "sourcePort": null,
+      "targetPort": 2,
+      "media": "copper",
+      "_cx": 660,
+      "_cy": 275
+    },
+    "id-d4ff2878-8631-40fd-9fda-7787466f6ebb": {
+      "id": "id-d4ff2878-8631-40fd-9fda-7787466f6ebb",
+      "source": "id-fe5d5ae7-5990-4bfc-aeef-2ca9c49569fa",
+      "target": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+      "sourcePort": null,
+      "targetPort": 3,
+      "media": "copper",
+      "_cx": 630,
+      "_cy": 330
+    },
+    "id-a8d5bebc-9129-45c8-83b3-f987594b55b9": {
+      "id": "id-a8d5bebc-9129-45c8-83b3-f987594b55b9",
+      "source": "id-ab6401ce-46b3-4bed-9624-a47ad6a4a633",
+      "target": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+      "sourcePort": null,
+      "targetPort": 4,
+      "media": "copper",
+      "_cx": 660,
+      "_cy": 365
+    },
+    "id-8011dc7f-0015-493c-ac36-08a13d7318aa": {
+      "id": "id-8011dc7f-0015-493c-ac36-08a13d7318aa",
+      "source": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "target": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+      "sourcePort": 7,
+      "targetPort": 5,
+      "media": "copper",
+      "_cx": 440,
+      "_cy": 300
+    },
+    "id-1e6dd6d5-2d60-44b2-89c6-7d3420a9cdac": {
+      "id": "id-1e6dd6d5-2d60-44b2-89c6-7d3420a9cdac",
+      "source": "id-a0eafc51-dc01-4efc-b987-27ce4d177a2b",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "sourcePort": null,
+      "targetPort": 8,
+      "media": "copper",
+      "_cx": 440,
+      "_cy": 205
+    },
+    "id-ffb4f6ba-02f4-4e76-a5ce-d6136a2cb151": {
+      "id": "id-ffb4f6ba-02f4-4e76-a5ce-d6136a2cb151",
+      "source": "id-566af8f8-4249-4c8d-8358-3bb5656f31dc",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "sourcePort": 1,
+      "targetPort": 9,
+      "media": "copper",
+      "_cx": 470,
+      "_cy": 250
+    }
+  },
+  "labels": {},
+  "shapes": {},
+  "deviceCounter": {
+    "PC": 5,
+    "Switch": 3,
+    "Router": 1,
+    "AP": 2,
+    "Laptop": 1,
+    "Server": 5,
+    "WebServer": 2,
+    "DNSServer": 2,
+    "L3Switch": 1,
+    "ISPRouter": 2,
+    "WLC": 2,
+    "SDNController": 1,
+    "Firewall": 2
+  },
+  "stpEnabled": true,
+  "savedAt": 1793274833058
+}

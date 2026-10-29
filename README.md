@@ -39,7 +39,8 @@ Open the base URL with no parameter to get a **Course labs** button (bottom-left
 | `t5-portsec`       | 5 · Lab 6 | auto (port security + BPDU guard) |
 | `t6-harden`        | 6 · Lab 1 | auto (switch hardening baseline) |
 | `t7-logging`       | 7 · Lab 1 | auto (syslog + NTP) |
-| `t2-worm`          | 2 · Lab 6 | auto (contain a worm by segmentation) |
+| `t2-worm`          | 2 · Lab 6 | auto (watch a worm spread on a flat network) |
+| `t5-worm-contain`  | 5 · Lab 8 | auto (contain the worm with segmentation) |
 | `t7-ransomware`    | 7 · Lab 6 | auto (make the backup survive ransomware) |
 | `t3-mfa`           | 3 · Lab 2 | auto (MFA rollout, kill shared logins) |
 | `t3-lifecycle`     | 3 · Lab 4 | auto (joiner / mover / leaver) |

@@ -14945,7 +14945,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
       topic: 3, lab: 5, shortTitle: 'Replace shared logins with per-user SSH',
       title: 'Topic 3 · Lab 5 — Replace shared logins with per-user SSH',
       objective: 'Remove the shared Telnet password and move to named accounts over SSH on both switches.',
-      studyLink: 'Topic 3, Sections 5 to 7', time: 'about 40 minutes',
+      studyLink: 'Topic 3, Sections 5 and 6', time: 'about 40 minutes',
       scenario: `<p>Both switches currently share one Telnet password that half the staff know. Replace it with
         individual accounts and encrypted SSH management on <code>SW-Core</code> and <code>SW-Access</code>.</p>`,
       steps: `<ol>
@@ -15009,7 +15009,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
       topic: 4, lab: 4, shortTitle: 'Correct the padlock training', tools: ['pki'],
       title: 'Topic 4 · Lab 4 — What the padlock really proves',
       objective: 'Fix the broken certificates you own, and judge trust correctly even when the padlock looks fine.',
-      studyLink: 'Topic 4, Sections 6 and 7', time: 'about 30 minutes',
+      studyLink: 'Topic 4, Sections 5 and 6', time: 'about 30 minutes',
       scenario: `<p>Staff were told "look for the padlock". The <b>Certificate inspector</b> below lists four addresses.
         Some are genuine Riverstone sites with certificate problems; one is a lookalike from a phishing email that has
         a <b>perfectly valid padlock</b>. Decide where it is safe to log in.</p>`,
@@ -15071,7 +15071,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
       topic: 5, lab: 5, shortTitle: 'Lock down the access ports',
       title: 'Topic 5 · Lab 5 — Lock down the reception and clinical ports',
       objective: 'Stop rogue devices and switch-spoofing at the edge with port security and BPDU guard.',
-      studyLink: 'Topic 5, Sections 3 and 4', time: 'about 35 minutes',
+      studyLink: 'Topic 5, Section 3', time: 'about 35 minutes',
       scenario: `<p>Waiting-room and desk network points are physically reachable by anyone. Harden the staff access
         ports on <code>SW-Access</code> so an unexpected device or a rogue switch is contained.</p>`,
       steps: `<ol>
@@ -15104,7 +15104,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
       topic: 5, lab: 7, shortTitle: 'Only staff devices on the clinical network', tools: ['dot1x'],
       title: 'Topic 5 · Lab 7 — 802.1X: only staff devices on the clinical network',
       objective: 'Require every device to authenticate before the switch lets it onto the clinical network.',
-      studyLink: 'Topic 5, Sections 6 and 7; Topic 3', time: 'about 35 minutes',
+      studyLink: 'Topic 5, Sections 5 and 6; Topic 3', time: 'about 35 minutes',
       scenario: `<p>Port security stops a flood, but a determined visitor can still unplug a staff PC and connect their
         own laptop with a copied MAC. 802.1X closes that gap by making the <b>device</b> authenticate against the
         <code>Identity-Server</code> before the port opens. Configure it in the <b>Network access control</b> panel.</p>`,
@@ -15132,12 +15132,15 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
 
     // ===================== TOPIC 6 =====================
     't6-harden': {
-      topic: 6, lab: 2, shortTitle: 'Harden a switch to a baseline',
-      title: 'Topic 6 · Lab 2 — Harden a switch to a secure baseline',
-      objective: 'Bring SW-Core up to a defensible management baseline and confirm each control.',
+      topic: 6, lab: 1, shortTitle: 'Harden a device to a baseline',
+      title: 'Topic 6 · Lab 1 — Harden a device to a secure baseline',
+      objective: 'Apply the endpoint-hardening discipline to a managed device and confirm each control.',
       studyLink: 'Topic 6, Sections 1 and 2', time: 'about 35 minutes',
-      scenario: `<p>Apply a hardening baseline to <code>SW-Core</code>: no clear-text management, named accounts,
-        encrypted stored passwords and a hashed enable secret.</p>`,
+      scenario: `<p>Hardening is not only for laptops and servers. Every managed device needs a defensible baseline,
+        including the network devices that run the clinic. Here you harden the management plane of <code>SW-Core</code>:
+        no clear-text management, named accounts, encrypted stored passwords and a hashed enable secret. The same
+        discipline &mdash; remove defaults, encrypt, require named logins, disable weak protocols &mdash; is exactly what
+        an endpoint hardening standard asks of every device.</p>`,
       steps: `<ol>
         <li>Open <code>SW-Core</code> and enter config mode.</li>
         <li>Encrypt stored passwords: <code>service password-encryption</code>.</li>
@@ -15171,7 +15174,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
       topic: 3, lab: 2, shortTitle: 'Roll out MFA and kill shared logins', tools: ['identity'],
       title: 'Topic 3 · Lab 2 — Roll out MFA and kill shared logins',
       objective: 'Make every staff account need a second factor, and remove the shared front-desk login.',
-      studyLink: 'Topic 3, Sections 4 and 5', time: 'about 35 minutes',
+      studyLink: 'Topic 3, Sections 3 and 4', time: 'about 35 minutes',
       scenario: `<p>The <code>Identity-Server</code> holds Riverstone's staff accounts. Right now every account is
         password-only, and there is a shared front-desk login that several people use. Fix the directory in the
         <b>Identity directory</b> panel below, then simulate an attack.</p>`,
@@ -15202,7 +15205,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
       topic: 3, lab: 4, shortTitle: 'The leaver whose account still works', tools: ['identity'],
       title: 'Topic 3 · Lab 4 — The joiner, mover and leaver',
       objective: 'Run the account lifecycle: disable the leaver, add the starter, and remove the shared login.',
-      studyLink: 'Topic 3, Sections 6 and 7', time: 'about 35 minutes',
+      studyLink: 'Topic 3, Section 6', time: 'about 35 minutes',
       scenario: `<p>A clinician, <b>J. Morrow</b>, left Riverstone three months ago but the account is still enabled and
         has not logged in for 95 days. A new clinician starts this week. Put the directory right.</p>`,
       steps: `<ol>
@@ -15230,32 +15233,62 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
 
     // ===================== TOPIC 2 — malware =====================
     't2-worm': {
-      topic: 2, lab: 6, shortTitle: 'Contain a worm on a flat network', tools: ['malware'],
-      title: 'Topic 2 · Lab 6 — Contain a worm on a flat network',
-      objective: 'Watch a worm race across the flat network, then contain it with segmentation.',
-      studyLink: 'Topic 2, Section 2; Topic 5, Section 3', time: 'about 35 minutes',
-      scenario: `<p><code>PC-Reception1</code> is phished and becomes patient zero. On today's flat network a worm can
-        reach every other host. You will see that happen, then segment the network and prove the worm can no longer
-        cross into the clinical systems.</p>`,
+      topic: 2, lab: 6, shortTitle: 'Watch a worm spread on a flat network', tools: ['malware'],
+      title: 'Topic 2 · Lab 6 — Watch a worm spread on a flat network',
+      objective: 'See how far and fast a worm spreads from one phished PC when the network is flat.',
+      studyLink: 'Topic 2, Section 1', time: 'about 25 minutes',
+      scenario: `<p><code>PC-Reception1</code> is phished and becomes patient zero. Riverstone's network is flat: one
+        broadcast domain, nothing segmented, nothing patched. Run the worm and watch where it goes. You are not fixing
+        anything here &mdash; the point is to feel the size of the problem. You will contain it in Topic 5, once you have
+        learned segmentation.</p>`,
       steps: `<ol>
-        <li>In <b>Threat controls</b> below, press <b>Infect patient zero</b>, then <b>Run spread</b>. Watch the worm
-            reach the clinical PCs and the servers (they turn red).</li>
-        <li>Press <b>Reset</b>.</li>
-        <li>Segment at Layer 2: on <code>SW-Access</code>, put the two clinical PC ports in <b>VLAN 20</b> and the two
-            reception PC ports in <b>VLAN 30</b> (<code>switchport mode access</code>, <code>switchport access vlan …</code>).</li>
-        <li>Press <b>Run spread</b> again and confirm the worm no longer reaches any clinical host.</li>
+        <li>In <b>Threat controls</b> below, press <b>Infect patient zero</b> (that is <code>PC-Reception1</code>).</li>
+        <li>Press <b>Run spread</b> and watch the worm move across the network (infected hosts turn red).</li>
+        <li>Count how many hosts it reached, and note that it touched the clinical records and the backup server from a
+            single reception PC.</li>
+        <li>Press <b>Check my work</b>.</li>
+      </ol>`,
+      reflection: ['Why did one phished reception PC reach the clinical systems and the backups?',
+                   'Which single change would have slowed this down the most — and which topic teaches it?'],
+      checks: [
+        { id: 'w1', label: 'You ran the spread and the worm reached a clinical system',
+          hint: 'Press Infect patient zero, then Run spread, and watch it cross into clinical.',
+          test: () => window.CyberMalware.status().some(h => /clinical/i.test(h.name) && h.infected) },
+        { id: 'w2', label: 'The worm also reached the Backup-Server',
+          hint: 'On a flat network the worm reaches the servers too — run the spread.',
+          test: () => { const b = window.CyberMalware.status().find(h => h.name === 'Backup-Server'); return !!(b && b.infected); } },
+        { id: 'w3', manual: true, label: 'I counted how many hosts the worm reached and can say why a flat network let it.' }
+      ]
+    },
+
+    // ===================== TOPIC 5 — worm containment (callback) =============
+    't5-worm-contain': {
+      topic: 5, lab: 8, shortTitle: 'Contain the worm with segmentation', tools: ['malware'],
+      title: 'Topic 5 · Lab 8 — Contain the worm with segmentation',
+      objective: 'Prove that the segmentation you built stops the Topic 2 worm reaching the clinical systems.',
+      studyLink: 'Topic 5, Section 3', time: 'about 30 minutes',
+      scenario: `<p>In Topic 2 you watched a worm from <code>PC-Reception1</code> reach every system on the flat network.
+        Now you know segmentation. Put clinical and reception into separate VLANs on <code>SW-Access</code>, then run the
+        same worm and prove it can no longer cross into clinical &mdash; with nothing patched.</p>`,
+      steps: `<ol>
+        <li>On <code>SW-Access</code>, create <code>vlan 20</code> (CLINICAL) and <code>vlan 30</code> (RECEPTION).</li>
+        <li>Put the two clinical PC ports in VLAN 20 and the two reception PC ports in VLAN 30
+            (<code>switchport mode access</code>, <code>switchport access vlan …</code>). If you still have the
+            segmentation from Lab 1, you are already there.</li>
+        <li>In <b>Threat controls</b>, press <b>Infect patient zero</b>, then <b>Run spread</b>.</li>
+        <li>Confirm the worm stays in reception and never reaches a clinical host.</li>
         <li>Press <b>Check my work</b>.</li>
       </ol>`,
       reflection: ['Why did segmentation stop the worm without patching a single host?',
-                   'What would still be exposed if the reception and clinical machines shared a VLAN?'],
+                   'What would still be exposed if reception and clinical shared a VLAN?'],
       checks: [
-        { id: 'w1', manual: true, label: 'I ran the worm before segmenting and watched it reach the clinical systems.' },
-        { id: 'w2', label: 'Clinical and reception PCs are now in different VLANs',
+        { id: 'wc1', label: 'Clinical and reception PCs are in different VLANs',
           hint: 'On SW-Access, put clinical ports in VLAN 20 and reception ports in VLAN 30.',
           test: c => { const d = SW(c, 'SW-Access'); return d && portsInVlan(d, 20) >= 1 && portsInVlan(d, 30) >= 1; } },
-        { id: 'w3', label: 'A worm from PC-Reception1 can no longer reach any clinical host',
+        { id: 'wc2', label: 'A worm from PC-Reception1 can no longer reach any clinical host',
           hint: 'Segment reception away from clinical, then re-run the spread.',
-          test: () => [...window.CyberMalware.blastRadius('PC-Reception1')].every(n => !/clinical/i.test(n)) }
+          test: () => [...window.CyberMalware.blastRadius('PC-Reception1')].every(n => !/clinical/i.test(n)) },
+        { id: 'wc3', manual: true, label: 'I ran the worm after segmenting and watched it fail to cross into clinical.' }
       ]
     },
 
