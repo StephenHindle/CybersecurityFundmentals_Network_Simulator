@@ -1,10 +1,10 @@
 {
   "devices": {
-    "id-dd2f9188-5fca-4507-9289-83e601b2df21": {
-      "id": "id-dd2f9188-5fca-4507-9289-83e601b2df21",
+    "id-96c386c9-c8b7-45fa-b2b8-3ff6022ee083": {
+      "id": "id-96c386c9-c8b7-45fa-b2b8-3ff6022ee083",
       "type": "Router",
       "name": "Internet",
-      "mac": "83:93:AE:BC:68:B4",
+      "mac": "D1:75:ED:82:F6:F3",
       "x": 120,
       "y": 90,
       "interfaces": {
@@ -13,8 +13,8 @@
           "type": "ethernet",
           "ip": "0.0.0.0",
           "subnet": "0.0.0.0",
-          "mac": "86:FB:56:17:7D:81",
-          "connectedLink": "id-c04b1bfb-7e85-4c6b-a97e-84231bbc5279",
+          "mac": "86:78:77:B3:CB:99",
+          "connectedLink": "id-d0aa587d-15bd-488a-8c3e-a76f83007132",
           "adminState": "down"
         },
         "Gig0/1": {
@@ -22,7 +22,7 @@
           "type": "ethernet",
           "ip": "0.0.0.0",
           "subnet": "0.0.0.0",
-          "mac": "1E:94:15:02:8D:FB",
+          "mac": "83:36:95:83:A8:CB",
           "connectedLink": null,
           "adminState": "down"
         },
@@ -31,7 +31,7 @@
           "type": "serial",
           "ip": "0.0.0.0",
           "subnet": "0.0.0.0",
-          "mac": "35:7E:00:EF:AE:75",
+          "mac": "A9:E6:55:AB:57:C1",
           "connectedLink": null,
           "adminState": "down"
         },
@@ -40,7 +40,7 @@
           "type": "serial",
           "ip": "0.0.0.0",
           "subnet": "0.0.0.0",
-          "mac": "CA:10:BC:17:93:B8",
+          "mac": "94:DE:B3:18:1A:EB",
           "connectedLink": null,
           "adminState": "down"
         }
@@ -84,11 +84,11 @@
       "isISP": true,
       "openTcpPorts": {}
     },
-    "id-0cf8ee76-a3e4-45d0-8fbb-de9a83ed3cb5": {
-      "id": "id-0cf8ee76-a3e4-45d0-8fbb-de9a83ed3cb5",
+    "id-3e4459d6-c23d-4d58-a0c0-6e8e72032c62": {
+      "id": "id-3e4459d6-c23d-4d58-a0c0-6e8e72032c62",
       "type": "Router",
       "name": "FW-Edge",
-      "mac": "3B:5C:A8:28:BD:68",
+      "mac": "C1:99:E8:41:8F:2E",
       "x": 320,
       "y": 110,
       "interfaces": {
@@ -97,8 +97,8 @@
           "type": "ethernet",
           "ip": "192.168.1.99",
           "subnet": "255.255.255.0",
-          "mac": "00:19:64:4F:7B:E8",
-          "connectedLink": "id-abfe1428-e367-42bb-aa46-1c5940e3e790",
+          "mac": "12:21:FA:59:90:6E",
+          "connectedLink": "id-2a66bca3-fc85-4630-b037-cf273cbc2752",
           "adminState": "up"
         },
         "port2": {
@@ -106,8 +106,8 @@
           "type": "ethernet",
           "ip": "0.0.0.0",
           "subnet": "0.0.0.0",
-          "mac": "20:DD:73:75:93:4A",
-          "connectedLink": "id-c04b1bfb-7e85-4c6b-a97e-84231bbc5279",
+          "mac": "A1:AE:9E:F2:B4:34",
+          "connectedLink": "id-d0aa587d-15bd-488a-8c3e-a76f83007132",
           "adminState": "up"
         },
         "port3": {
@@ -115,8 +115,8 @@
           "type": "ethernet",
           "ip": "0.0.0.0",
           "subnet": "0.0.0.0",
-          "mac": "80:AF:9B:2E:AB:EC",
-          "connectedLink": "id-3b25b83d-be67-41d9-9528-07d698ebae17",
+          "mac": "6E:75:0D:C8:A1:34",
+          "connectedLink": "id-37e88564-62cb-46e2-8a2a-36274a1f8ed7",
           "adminState": "up"
         },
         "port4": {
@@ -124,7 +124,7 @@
           "type": "ethernet",
           "ip": "0.0.0.0",
           "subnet": "0.0.0.0",
-          "mac": "C2:5F:C4:FA:37:B2",
+          "mac": "4B:23:0B:E5:6D:41",
           "connectedLink": null,
           "adminState": "up"
         }
@@ -234,18 +234,18 @@
       },
       "openTcpPorts": {}
     },
-    "id-45bb4ca2-bd6f-4366-a609-8b77a944e14d": {
-      "id": "id-45bb4ca2-bd6f-4366-a609-8b77a944e14d",
+    "id-4af2a395-3f95-4aac-b91e-980d257e2626": {
+      "id": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
       "type": "Switch",
       "name": "SW-Core",
-      "mac": "AB:27:C5:82:A6:43",
+      "mac": "1E:12:67:1F:67:50",
       "x": 320,
       "y": 300,
       "ports": [
         {
           "id": 1,
           "media": "copper",
-          "connectedLink": "id-abfe1428-e367-42bb-aa46-1c5940e3e790",
+          "connectedLink": "id-2a66bca3-fc85-4630-b037-cf273cbc2752",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -254,7 +254,7 @@
         {
           "id": 2,
           "media": "copper",
-          "connectedLink": "id-53b346e7-3c95-4cbb-a8ae-b2e3b6d43027",
+          "connectedLink": "id-c4d39f23-dfa0-40b1-9bc4-c16544acc9a1",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -263,7 +263,7 @@
         {
           "id": 3,
           "media": "copper",
-          "connectedLink": "id-11b60085-df66-4244-83bd-a77db3c36f3a",
+          "connectedLink": "id-b3958163-e045-4235-8f8e-aed437317215",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -272,7 +272,7 @@
         {
           "id": 4,
           "media": "copper",
-          "connectedLink": "id-cbb39545-f364-40ca-a04d-1b7f4697fa7a",
+          "connectedLink": "id-dd8e969d-6c54-4b3b-84a1-37e18ed2800f",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -281,7 +281,7 @@
         {
           "id": 5,
           "media": "copper",
-          "connectedLink": "id-7085bd16-3e63-4fa1-9c9d-e4d095a37439",
+          "connectedLink": "id-5f10215b-ded9-411a-8bb9-f406bd3798b7",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -290,7 +290,7 @@
         {
           "id": 6,
           "media": "copper",
-          "connectedLink": "id-636b0e92-f967-4599-b5f1-df62bf9d44f0",
+          "connectedLink": "id-46b31afd-0365-4024-a08d-e463ca805ff9",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -299,7 +299,7 @@
         {
           "id": 7,
           "media": "copper",
-          "connectedLink": "id-bcf7efa7-0be7-4ff8-8624-8378c00ee735",
+          "connectedLink": "id-8011dc7f-0015-493c-ac36-08a13d7318aa",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -308,7 +308,7 @@
         {
           "id": 8,
           "media": "copper",
-          "connectedLink": "id-90061f01-3152-4af9-af2e-0db52b534cee",
+          "connectedLink": "id-1e6dd6d5-2d60-44b2-89c6-7d3420a9cdac",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -317,7 +317,7 @@
         {
           "id": 9,
           "media": "copper",
-          "connectedLink": null,
+          "connectedLink": "id-ffb4f6ba-02f4-4e76-a5ce-d6136a2cb151",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -481,9 +481,9 @@
       ],
       "macTable": {},
       "stp": {
-        "rootBridge": "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79",
+        "rootBridge": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
         "costToRoot": 19,
-        "rootPort": 6,
+        "rootPort": 7,
         "nextHopMac": null,
         "nextHopPort": null
       },
@@ -503,12 +503,12 @@
       "stpPriority": {},
       "stpVlan": {
         "1": {
-          "rootBridge": "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79",
-          "rootMac": "A4:D9:0E:45:70:D7",
+          "rootBridge": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+          "rootMac": "18:FC:10:A0:F7:BE",
           "priority": 32768,
           "rootPriority": 32768,
           "costToRoot": 19,
-          "rootPort": 6
+          "rootPort": 7
         }
       },
       "cdpEnabled": true,
@@ -541,18 +541,18 @@
       "serviceTimestamps": "datetime",
       "ntpServerIp": "192.168.1.40"
     },
-    "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79": {
-      "id": "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79",
+    "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc": {
+      "id": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
       "type": "Switch",
       "name": "SW-Access",
-      "mac": "A4:D9:0E:45:70:D7",
+      "mac": "18:FC:10:A0:F7:BE",
       "x": 560,
       "y": 300,
       "ports": [
         {
           "id": 1,
           "media": "copper",
-          "connectedLink": "id-c06b570f-0c06-428a-a530-998ea039627e",
+          "connectedLink": "id-60fb8f1e-a877-4de5-adf9-535ad4dd7951",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -561,7 +561,7 @@
         {
           "id": 2,
           "media": "copper",
-          "connectedLink": "id-50049e72-0dbb-40c7-a3c5-46583dfa8d8c",
+          "connectedLink": "id-779033a4-2347-4689-acf4-20f793953fd7",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -570,7 +570,7 @@
         {
           "id": 3,
           "media": "copper",
-          "connectedLink": "id-cb57495f-1806-4982-ac23-4ae58f6a1542",
+          "connectedLink": "id-d4ff2878-8631-40fd-9fda-7787466f6ebb",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -579,7 +579,7 @@
         {
           "id": 4,
           "media": "copper",
-          "connectedLink": "id-8b9d384d-42b2-4f89-bc7e-0af28e1b50f7",
+          "connectedLink": "id-a8d5bebc-9129-45c8-83b3-f987594b55b9",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -588,7 +588,7 @@
         {
           "id": 5,
           "media": "copper",
-          "connectedLink": "id-636b0e92-f967-4599-b5f1-df62bf9d44f0",
+          "connectedLink": "id-8011dc7f-0015-493c-ac36-08a13d7318aa",
           "stpState": "forwarding",
           "adminState": "up",
           "vlan": 1,
@@ -788,7 +788,7 @@
       ],
       "macTable": {},
       "stp": {
-        "rootBridge": "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79",
+        "rootBridge": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
         "costToRoot": 0,
         "rootPort": null,
         "nextHopMac": null,
@@ -810,8 +810,8 @@
       "stpPriority": {},
       "stpVlan": {
         "1": {
-          "rootBridge": "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79",
-          "rootMac": "A4:D9:0E:45:70:D7",
+          "rootBridge": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+          "rootMac": "18:FC:10:A0:F7:BE",
           "priority": 32768,
           "rootPriority": 32768,
           "costToRoot": 0,
@@ -848,18 +848,18 @@
       "serviceTimestamps": "datetime",
       "ntpServerIp": "192.168.1.40"
     },
-    "id-d1e4b950-4beb-44de-a341-16e71341ff17": {
-      "id": "id-d1e4b950-4beb-44de-a341-16e71341ff17",
+    "id-14e85147-31d3-4216-a825-8d80d815b7a3": {
+      "id": "id-14e85147-31d3-4216-a825-8d80d815b7a3",
       "type": "WebServer",
       "name": "Web-Portal",
-      "mac": "82:F5:AE:FB:20:1D",
+      "mac": "BE:83:DF:DB:49:DE",
       "x": 150,
       "y": 300,
       "ip": "192.168.1.80",
       "subnet": "255.255.255.0",
       "gateway": "192.168.1.99",
       "dns": "0.0.0.0",
-      "port": "id-3b25b83d-be67-41d9-9528-07d698ebae17",
+      "port": "id-37e88564-62cb-46e2-8a2a-36274a1f8ed7",
       "arpCache": {},
       "ipMode": "static",
       "openTcpPorts": {},
@@ -891,18 +891,18 @@
       "dualHomed": false,
       "port2": null
     },
-    "id-895cdc22-8c94-4a94-9f57-2c632b1585c4": {
-      "id": "id-895cdc22-8c94-4a94-9f57-2c632b1585c4",
+    "id-0a40f7f7-f68c-4588-9a28-e3cd9bf68320": {
+      "id": "id-0a40f7f7-f68c-4588-9a28-e3cd9bf68320",
       "type": "DNSServer",
       "name": "DNS-Server",
-      "mac": "C3:74:C0:41:3B:D8",
+      "mac": "E4:F5:2F:99:7F:A8",
       "x": 200,
       "y": 460,
       "ip": "192.168.1.53",
       "subnet": "255.255.255.0",
       "gateway": "192.168.1.99",
       "dns": "192.168.1.53",
-      "port": "id-53b346e7-3c95-4cbb-a8ae-b2e3b6d43027",
+      "port": "id-c4d39f23-dfa0-40b1-9bc4-c16544acc9a1",
       "arpCache": {},
       "ipMode": "static",
       "openTcpPorts": {},
@@ -924,18 +924,18 @@
       "dualHomed": false,
       "port2": null
     },
-    "id-222b6a4f-a4d3-435a-9fb1-edf1e8bd6f9a": {
-      "id": "id-222b6a4f-a4d3-435a-9fb1-edf1e8bd6f9a",
+    "id-682a0d22-0f8e-475b-802d-6ad0c68c524d": {
+      "id": "id-682a0d22-0f8e-475b-802d-6ad0c68c524d",
       "type": "Server",
       "name": "Clinical-Records",
-      "mac": "6E:5C:6A:2C:33:94",
+      "mac": "8F:48:F0:55:45:93",
       "x": 330,
       "y": 470,
       "ip": "192.168.1.20",
       "subnet": "255.255.255.0",
       "gateway": "192.168.1.99",
       "dns": "192.168.1.53",
-      "port": "id-11b60085-df66-4244-83bd-a77db3c36f3a",
+      "port": "id-b3958163-e045-4235-8f8e-aed437317215",
       "arpCache": {},
       "ipMode": "static",
       "openTcpPorts": {},
@@ -960,18 +960,18 @@
       "dualHomed": false,
       "port2": null
     },
-    "id-d1b4ca84-0318-4c7a-9774-c03f1df44c2f": {
-      "id": "id-d1b4ca84-0318-4c7a-9774-c03f1df44c2f",
+    "id-2f99c44a-ebe8-46e3-bfda-657907a772e1": {
+      "id": "id-2f99c44a-ebe8-46e3-bfda-657907a772e1",
       "type": "Server",
       "name": "Backup-Server",
-      "mac": "11:A4:F4:78:D4:05",
+      "mac": "A2:E0:32:AE:0F:0C",
       "x": 440,
       "y": 470,
       "ip": "192.168.1.30",
       "subnet": "255.255.255.0",
       "gateway": "192.168.1.99",
       "dns": "192.168.1.53",
-      "port": "id-cbb39545-f364-40ca-a04d-1b7f4697fa7a",
+      "port": "id-dd8e969d-6c54-4b3b-84a1-37e18ed2800f",
       "arpCache": {},
       "ipMode": "static",
       "openTcpPorts": {},
@@ -996,18 +996,18 @@
       "dualHomed": false,
       "port2": null
     },
-    "id-a0135466-5650-4af0-89e1-db4546ffe492": {
-      "id": "id-a0135466-5650-4af0-89e1-db4546ffe492",
+    "id-485b993a-5ecc-4a62-b768-3a71e4b950b0": {
+      "id": "id-485b993a-5ecc-4a62-b768-3a71e4b950b0",
       "type": "Server",
       "name": "Log-Server",
-      "mac": "A6:57:2B:29:E4:D2",
+      "mac": "93:78:1C:EF:7A:F3",
       "x": 120,
       "y": 470,
       "ip": "192.168.1.40",
       "subnet": "255.255.255.0",
       "gateway": "192.168.1.99",
       "dns": "192.168.1.53",
-      "port": "id-7085bd16-3e63-4fa1-9c9d-e4d095a37439",
+      "port": "id-5f10215b-ded9-411a-8bb9-f406bd3798b7",
       "arpCache": {},
       "ipMode": "static",
       "openTcpPorts": {},
@@ -1032,18 +1032,112 @@
       "dualHomed": false,
       "port2": null
     },
-    "id-46effb2b-41cb-4cb4-9417-fd8a535994fc": {
-      "id": "id-46effb2b-41cb-4cb4-9417-fd8a535994fc",
+    "id-06c8f31f-2232-41d0-9327-6d93b6b6f612": {
+      "id": "id-06c8f31f-2232-41d0-9327-6d93b6b6f612",
+      "type": "Server",
+      "name": "Identity-Server",
+      "mac": "4C:D6:59:4C:E2:1C",
+      "x": 40,
+      "y": 400,
+      "ip": "192.168.1.60",
+      "subnet": "255.255.255.0",
+      "gateway": "192.168.1.99",
+      "dns": "192.168.1.53",
+      "port": "id-46b31afd-0365-4024-a08d-e463ca805ff9",
+      "arpCache": {},
+      "ipMode": "static",
+      "openTcpPorts": {},
+      "tcpConns": {},
+      "localFiles": {
+        "notes.txt": "A local file on this host.\n"
+      },
+      "cli": {
+        "mode": "cmd",
+        "prompt": "C:\\>",
+        "history": [],
+        "isRunning": false
+      },
+      "dhcpEnabled": false,
+      "poolStart": "192.168.1.100",
+      "poolEnd": "192.168.1.200",
+      "poolMask": "255.255.255.0",
+      "poolGateway": "192.168.1.1",
+      "poolDns": "8.8.8.8",
+      "leaseTime": "86400",
+      "leases": {},
+      "dualHomed": false,
+      "port2": null,
+      "directory": [
+        {
+          "name": "rskinner",
+          "display": "R. Skinner (Reception)",
+          "role": "reception",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": false,
+          "lastLoginDays": 1
+        },
+        {
+          "name": "achen",
+          "display": "A. Chen (Clinician)",
+          "role": "clinical",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": false,
+          "lastLoginDays": 2
+        },
+        {
+          "name": "dpatel",
+          "display": "D. Patel (Clinician)",
+          "role": "clinical",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "itadmin",
+          "display": "IT Administrator",
+          "role": "it",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "frontdesk",
+          "display": "Shared front-desk login",
+          "role": "reception",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": false,
+          "shared": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jmorrow",
+          "display": "J. Morrow (has left)",
+          "role": "clinical",
+          "enabled": true,
+          "mfa": "none",
+          "privileged": false,
+          "departed": true,
+          "lastLoginDays": 95
+        }
+      ]
+    },
+    "id-d228a6dd-4f5b-4787-988e-78dcb3aa4ef2": {
+      "id": "id-d228a6dd-4f5b-4787-988e-78dcb3aa4ef2",
       "type": "PC",
       "name": "PC-Reception1",
-      "mac": "74:3E:F2:1A:3C:FB",
+      "mac": "85:D8:75:15:5D:2C",
       "x": 700,
       "y": 180,
       "ip": "192.168.1.101",
       "subnet": "255.255.255.0",
       "gateway": "192.168.1.99",
       "dns": "192.168.1.53",
-      "port": "id-c06b570f-0c06-428a-a530-998ea039627e",
+      "port": "id-60fb8f1e-a877-4de5-adf9-535ad4dd7951",
       "arpCache": {},
       "ipMode": "static",
       "openTcpPorts": {},
@@ -1058,18 +1152,18 @@
         "isRunning": false
       }
     },
-    "id-05774cc9-d534-41a9-816f-5a135190bc3d": {
-      "id": "id-05774cc9-d534-41a9-816f-5a135190bc3d",
+    "id-1a1c5837-b134-4c05-90ec-2f4a7dd0c7ad": {
+      "id": "id-1a1c5837-b134-4c05-90ec-2f4a7dd0c7ad",
       "type": "PC",
       "name": "PC-Reception2",
-      "mac": "FD:98:CC:32:0E:EF",
+      "mac": "32:1A:13:29:E3:51",
       "x": 760,
       "y": 250,
       "ip": "192.168.1.102",
       "subnet": "255.255.255.0",
       "gateway": "192.168.1.99",
       "dns": "192.168.1.53",
-      "port": "id-50049e72-0dbb-40c7-a3c5-46583dfa8d8c",
+      "port": "id-779033a4-2347-4689-acf4-20f793953fd7",
       "arpCache": {},
       "ipMode": "static",
       "openTcpPorts": {},
@@ -1084,18 +1178,18 @@
         "isRunning": false
       }
     },
-    "id-3680c313-eb0c-4f04-9d88-0cd6e399372a": {
-      "id": "id-3680c313-eb0c-4f04-9d88-0cd6e399372a",
+    "id-fe5d5ae7-5990-4bfc-aeef-2ca9c49569fa": {
+      "id": "id-fe5d5ae7-5990-4bfc-aeef-2ca9c49569fa",
       "type": "PC",
       "name": "PC-Clinical1",
-      "mac": "12:AD:34:F0:71:37",
+      "mac": "92:66:B7:17:66:81",
       "x": 700,
       "y": 360,
       "ip": "192.168.1.111",
       "subnet": "255.255.255.0",
       "gateway": "192.168.1.99",
       "dns": "192.168.1.53",
-      "port": "id-cb57495f-1806-4982-ac23-4ae58f6a1542",
+      "port": "id-d4ff2878-8631-40fd-9fda-7787466f6ebb",
       "arpCache": {},
       "ipMode": "static",
       "openTcpPorts": {},
@@ -1110,18 +1204,18 @@
         "isRunning": false
       }
     },
-    "id-7778b383-4c52-4daf-922c-a952d5cbfea3": {
-      "id": "id-7778b383-4c52-4daf-922c-a952d5cbfea3",
+    "id-ab6401ce-46b3-4bed-9624-a47ad6a4a633": {
+      "id": "id-ab6401ce-46b3-4bed-9624-a47ad6a4a633",
       "type": "PC",
       "name": "PC-Clinical2",
-      "mac": "A2:7B:E8:90:F7:5C",
+      "mac": "1D:02:6D:60:03:C1",
       "x": 760,
       "y": 430,
       "ip": "192.168.1.112",
       "subnet": "255.255.255.0",
       "gateway": "192.168.1.99",
       "dns": "192.168.1.53",
-      "port": "id-8b9d384d-42b2-4f89-bc7e-0af28e1b50f7",
+      "port": "id-a8d5bebc-9129-45c8-83b3-f987594b55b9",
       "arpCache": {},
       "ipMode": "static",
       "openTcpPorts": {},
@@ -1136,18 +1230,18 @@
         "isRunning": false
       }
     },
-    "id-6e5ca8db-a174-4348-a7e0-1ed47f97a8fd": {
-      "id": "id-6e5ca8db-a174-4348-a7e0-1ed47f97a8fd",
+    "id-a0eafc51-dc01-4efc-b987-27ce4d177a2b": {
+      "id": "id-a0eafc51-dc01-4efc-b987-27ce4d177a2b",
       "type": "WebServer",
       "name": "WLC-Guest",
-      "mac": "2A:8D:96:17:F8:8D",
+      "mac": "3F:FE:66:62:64:FF",
       "x": 560,
       "y": 110,
       "ip": "192.168.1.10",
       "subnet": "255.255.255.0",
       "gateway": "0.0.0.0",
       "dns": "0.0.0.0",
-      "port": "id-bcf7efa7-0be7-4ff8-8624-8378c00ee735",
+      "port": "id-1e6dd6d5-2d60-44b2-89c6-7d3420a9cdac",
       "arpCache": {},
       "ipMode": "static",
       "openTcpPorts": {},
@@ -1182,17 +1276,17 @@
       "dynamicInterfaces": [],
       "wlans": []
     },
-    "id-cbdbbf00-06b3-450a-a2de-1105db1591d7": {
-      "id": "id-cbdbbf00-06b3-450a-a2de-1105db1591d7",
+    "id-566af8f8-4249-4c8d-8358-3bb5656f31dc": {
+      "id": "id-566af8f8-4249-4c8d-8358-3bb5656f31dc",
       "type": "AP",
       "name": "AP-Waiting",
-      "mac": "0F:99:F9:71:23:BE",
+      "mac": "EE:8F:CD:2F:94:BA",
       "x": 620,
       "y": 200,
       "ports": [
         {
           "id": 1,
-          "connectedLink": "id-90061f01-3152-4af9-af2e-0db52b534cee",
+          "connectedLink": "id-ffb4f6ba-02f4-4e76-a5ce-d6136a2cb151",
           "stpState": "forwarding",
           "adminState": "up"
         }
@@ -1207,142 +1301,152 @@
     }
   },
   "links": {
-    "id-c04b1bfb-7e85-4c6b-a97e-84231bbc5279": {
-      "id": "id-c04b1bfb-7e85-4c6b-a97e-84231bbc5279",
-      "source": "id-dd2f9188-5fca-4507-9289-83e601b2df21",
-      "target": "id-0cf8ee76-a3e4-45d0-8fbb-de9a83ed3cb5",
+    "id-d0aa587d-15bd-488a-8c3e-a76f83007132": {
+      "id": "id-d0aa587d-15bd-488a-8c3e-a76f83007132",
+      "source": "id-96c386c9-c8b7-45fa-b2b8-3ff6022ee083",
+      "target": "id-3e4459d6-c23d-4d58-a0c0-6e8e72032c62",
       "sourcePort": "Gig0/0",
       "targetPort": "port2",
       "media": "copper",
       "_cx": 220,
       "_cy": 100
     },
-    "id-abfe1428-e367-42bb-aa46-1c5940e3e790": {
-      "id": "id-abfe1428-e367-42bb-aa46-1c5940e3e790",
-      "source": "id-0cf8ee76-a3e4-45d0-8fbb-de9a83ed3cb5",
-      "target": "id-45bb4ca2-bd6f-4366-a609-8b77a944e14d",
+    "id-2a66bca3-fc85-4630-b037-cf273cbc2752": {
+      "id": "id-2a66bca3-fc85-4630-b037-cf273cbc2752",
+      "source": "id-3e4459d6-c23d-4d58-a0c0-6e8e72032c62",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
       "sourcePort": "port1",
       "targetPort": 1,
       "media": "copper",
       "_cx": 320,
       "_cy": 205
     },
-    "id-3b25b83d-be67-41d9-9528-07d698ebae17": {
-      "id": "id-3b25b83d-be67-41d9-9528-07d698ebae17",
-      "source": "id-d1e4b950-4beb-44de-a341-16e71341ff17",
-      "target": "id-0cf8ee76-a3e4-45d0-8fbb-de9a83ed3cb5",
+    "id-37e88564-62cb-46e2-8a2a-36274a1f8ed7": {
+      "id": "id-37e88564-62cb-46e2-8a2a-36274a1f8ed7",
+      "source": "id-14e85147-31d3-4216-a825-8d80d815b7a3",
+      "target": "id-3e4459d6-c23d-4d58-a0c0-6e8e72032c62",
       "sourcePort": null,
       "targetPort": "port3",
       "media": "copper",
       "_cx": 235,
       "_cy": 205
     },
-    "id-53b346e7-3c95-4cbb-a8ae-b2e3b6d43027": {
-      "id": "id-53b346e7-3c95-4cbb-a8ae-b2e3b6d43027",
-      "source": "id-895cdc22-8c94-4a94-9f57-2c632b1585c4",
-      "target": "id-45bb4ca2-bd6f-4366-a609-8b77a944e14d",
+    "id-c4d39f23-dfa0-40b1-9bc4-c16544acc9a1": {
+      "id": "id-c4d39f23-dfa0-40b1-9bc4-c16544acc9a1",
+      "source": "id-0a40f7f7-f68c-4588-9a28-e3cd9bf68320",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
       "sourcePort": null,
       "targetPort": 2,
       "media": "copper",
       "_cx": 260,
       "_cy": 380
     },
-    "id-11b60085-df66-4244-83bd-a77db3c36f3a": {
-      "id": "id-11b60085-df66-4244-83bd-a77db3c36f3a",
-      "source": "id-222b6a4f-a4d3-435a-9fb1-edf1e8bd6f9a",
-      "target": "id-45bb4ca2-bd6f-4366-a609-8b77a944e14d",
+    "id-b3958163-e045-4235-8f8e-aed437317215": {
+      "id": "id-b3958163-e045-4235-8f8e-aed437317215",
+      "source": "id-682a0d22-0f8e-475b-802d-6ad0c68c524d",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
       "sourcePort": null,
       "targetPort": 3,
       "media": "copper",
       "_cx": 325,
       "_cy": 385
     },
-    "id-cbb39545-f364-40ca-a04d-1b7f4697fa7a": {
-      "id": "id-cbb39545-f364-40ca-a04d-1b7f4697fa7a",
-      "source": "id-d1b4ca84-0318-4c7a-9774-c03f1df44c2f",
-      "target": "id-45bb4ca2-bd6f-4366-a609-8b77a944e14d",
+    "id-dd8e969d-6c54-4b3b-84a1-37e18ed2800f": {
+      "id": "id-dd8e969d-6c54-4b3b-84a1-37e18ed2800f",
+      "source": "id-2f99c44a-ebe8-46e3-bfda-657907a772e1",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
       "sourcePort": null,
       "targetPort": 4,
       "media": "copper",
       "_cx": 380,
       "_cy": 385
     },
-    "id-7085bd16-3e63-4fa1-9c9d-e4d095a37439": {
-      "id": "id-7085bd16-3e63-4fa1-9c9d-e4d095a37439",
-      "source": "id-a0135466-5650-4af0-89e1-db4546ffe492",
-      "target": "id-45bb4ca2-bd6f-4366-a609-8b77a944e14d",
+    "id-5f10215b-ded9-411a-8bb9-f406bd3798b7": {
+      "id": "id-5f10215b-ded9-411a-8bb9-f406bd3798b7",
+      "source": "id-485b993a-5ecc-4a62-b768-3a71e4b950b0",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
       "sourcePort": null,
       "targetPort": 5,
       "media": "copper",
       "_cx": 220,
       "_cy": 385
     },
-    "id-c06b570f-0c06-428a-a530-998ea039627e": {
-      "id": "id-c06b570f-0c06-428a-a530-998ea039627e",
-      "source": "id-46effb2b-41cb-4cb4-9417-fd8a535994fc",
-      "target": "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79",
+    "id-46b31afd-0365-4024-a08d-e463ca805ff9": {
+      "id": "id-46b31afd-0365-4024-a08d-e463ca805ff9",
+      "source": "id-06c8f31f-2232-41d0-9327-6d93b6b6f612",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "sourcePort": null,
+      "targetPort": 6,
+      "media": "copper",
+      "_cx": 180,
+      "_cy": 350
+    },
+    "id-60fb8f1e-a877-4de5-adf9-535ad4dd7951": {
+      "id": "id-60fb8f1e-a877-4de5-adf9-535ad4dd7951",
+      "source": "id-d228a6dd-4f5b-4787-988e-78dcb3aa4ef2",
+      "target": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
       "sourcePort": null,
       "targetPort": 1,
       "media": "copper",
       "_cx": 630,
       "_cy": 240
     },
-    "id-50049e72-0dbb-40c7-a3c5-46583dfa8d8c": {
-      "id": "id-50049e72-0dbb-40c7-a3c5-46583dfa8d8c",
-      "source": "id-05774cc9-d534-41a9-816f-5a135190bc3d",
-      "target": "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79",
+    "id-779033a4-2347-4689-acf4-20f793953fd7": {
+      "id": "id-779033a4-2347-4689-acf4-20f793953fd7",
+      "source": "id-1a1c5837-b134-4c05-90ec-2f4a7dd0c7ad",
+      "target": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
       "sourcePort": null,
       "targetPort": 2,
       "media": "copper",
       "_cx": 660,
       "_cy": 275
     },
-    "id-cb57495f-1806-4982-ac23-4ae58f6a1542": {
-      "id": "id-cb57495f-1806-4982-ac23-4ae58f6a1542",
-      "source": "id-3680c313-eb0c-4f04-9d88-0cd6e399372a",
-      "target": "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79",
+    "id-d4ff2878-8631-40fd-9fda-7787466f6ebb": {
+      "id": "id-d4ff2878-8631-40fd-9fda-7787466f6ebb",
+      "source": "id-fe5d5ae7-5990-4bfc-aeef-2ca9c49569fa",
+      "target": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
       "sourcePort": null,
       "targetPort": 3,
       "media": "copper",
       "_cx": 630,
       "_cy": 330
     },
-    "id-8b9d384d-42b2-4f89-bc7e-0af28e1b50f7": {
-      "id": "id-8b9d384d-42b2-4f89-bc7e-0af28e1b50f7",
-      "source": "id-7778b383-4c52-4daf-922c-a952d5cbfea3",
-      "target": "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79",
+    "id-a8d5bebc-9129-45c8-83b3-f987594b55b9": {
+      "id": "id-a8d5bebc-9129-45c8-83b3-f987594b55b9",
+      "source": "id-ab6401ce-46b3-4bed-9624-a47ad6a4a633",
+      "target": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
       "sourcePort": null,
       "targetPort": 4,
       "media": "copper",
       "_cx": 660,
       "_cy": 365
     },
-    "id-636b0e92-f967-4599-b5f1-df62bf9d44f0": {
-      "id": "id-636b0e92-f967-4599-b5f1-df62bf9d44f0",
-      "source": "id-45bb4ca2-bd6f-4366-a609-8b77a944e14d",
-      "target": "id-7de3b20c-8912-4f04-b45b-6aa9dd6ceb79",
-      "sourcePort": 6,
+    "id-8011dc7f-0015-493c-ac36-08a13d7318aa": {
+      "id": "id-8011dc7f-0015-493c-ac36-08a13d7318aa",
+      "source": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
+      "target": "id-3646ac11-8c69-4bc9-95b8-b8c43795dffc",
+      "sourcePort": 7,
       "targetPort": 5,
       "media": "copper",
       "_cx": 440,
       "_cy": 300
     },
-    "id-bcf7efa7-0be7-4ff8-8624-8378c00ee735": {
-      "id": "id-bcf7efa7-0be7-4ff8-8624-8378c00ee735",
-      "source": "id-6e5ca8db-a174-4348-a7e0-1ed47f97a8fd",
-      "target": "id-45bb4ca2-bd6f-4366-a609-8b77a944e14d",
+    "id-1e6dd6d5-2d60-44b2-89c6-7d3420a9cdac": {
+      "id": "id-1e6dd6d5-2d60-44b2-89c6-7d3420a9cdac",
+      "source": "id-a0eafc51-dc01-4efc-b987-27ce4d177a2b",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
       "sourcePort": null,
-      "targetPort": 7,
+      "targetPort": 8,
       "media": "copper",
       "_cx": 440,
       "_cy": 205
     },
-    "id-90061f01-3152-4af9-af2e-0db52b534cee": {
-      "id": "id-90061f01-3152-4af9-af2e-0db52b534cee",
-      "source": "id-cbdbbf00-06b3-450a-a2de-1105db1591d7",
-      "target": "id-45bb4ca2-bd6f-4366-a609-8b77a944e14d",
+    "id-ffb4f6ba-02f4-4e76-a5ce-d6136a2cb151": {
+      "id": "id-ffb4f6ba-02f4-4e76-a5ce-d6136a2cb151",
+      "source": "id-566af8f8-4249-4c8d-8358-3bb5656f31dc",
+      "target": "id-4af2a395-3f95-4aac-b91e-980d257e2626",
       "sourcePort": 1,
-      "targetPort": 8,
+      "targetPort": 9,
       "media": "copper",
       "_cx": 470,
       "_cy": 250
@@ -1356,7 +1460,7 @@
     "Router": 1,
     "AP": 2,
     "Laptop": 1,
-    "Server": 4,
+    "Server": 5,
     "WebServer": 2,
     "DNSServer": 2,
     "L3Switch": 1,
@@ -1366,5 +1470,5 @@
     "Firewall": 2
   },
   "stpEnabled": true,
-  "savedAt": 1793245219159
+  "savedAt": 1793251137100
 }
