@@ -14888,7 +14888,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 1 =====================
     't1-assets': {
       topic: 1, lab: 1, shortTitle: 'Map Riverstone and its assets',
-      title: 'Topic 1 · Lab 1 — Map Riverstone and its assets',
+      title: 'Map Riverstone and its assets',
       objective: 'Build an accurate picture of what Riverstone runs and why each asset matters.',
       studyLink: 'Topic 1, Sections 1 to 3', time: 'about 30 minutes',
       scenario: `<p>This is Riverstone Community Health as it stands today: one flat network behind a single firewall,
@@ -14916,7 +14916,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 2 =====================
     't2-recon-capture': {
       topic: 2, lab: 4, shortTitle: 'Recon and clear-text capture',
-      title: 'Topic 2 · Lab 4 — Reconnaissance and clear-text credentials',
+      title: 'Reconnaissance and clear-text credentials',
       objective: 'See how an attacker maps a flat network and harvests credentials that cross it in clear text.',
       studyLink: 'Topic 2, Sections 4 and 6', time: 'about 35 minutes',
       scenario: `<p>You are sitting at <code>PC-Reception1</code>. The switches still allow <b>Telnet</b> for management,
@@ -14943,7 +14943,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 3 =====================
     't3-ssh-users': {
       topic: 3, lab: 5, shortTitle: 'Replace shared logins with per-user SSH',
-      title: 'Topic 3 · Lab 5 — Replace shared logins with per-user SSH',
+      title: 'Replace shared logins with per-user SSH',
       objective: 'Remove the shared Telnet password and move to named accounts over SSH on both switches.',
       studyLink: 'Topic 3, Sections 5 and 6', time: 'about 40 minutes',
       scenario: `<p>Both switches currently share one Telnet password that half the staff know. Replace it with
@@ -14978,7 +14978,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 4 =====================
     't4-wire-crypto': {
       topic: 4, lab: 3, shortTitle: 'What is encrypted on the wire?',
-      title: 'Topic 4 · Lab 3 — What is encrypted on the wire?',
+      title: 'What is encrypted on the wire?',
       objective: 'Tell protected traffic from exposed traffic by watching it, and prove the padlock is about the channel.',
       studyLink: 'Topic 4, Sections 6 and 7', time: 'about 35 minutes',
       scenario: `<p>Riverstone staff assume "it has a password, so it is safe". Use the sniffer to see what is actually
@@ -15007,7 +15007,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 4 — PKI / certificates =====================
     't4-padlock': {
       topic: 4, lab: 4, shortTitle: 'Correct the padlock training', tools: ['pki'],
-      title: 'Topic 4 · Lab 4 — What the padlock really proves',
+      title: 'What the padlock really proves',
       objective: 'Fix the broken certificates you own, and judge trust correctly even when the padlock looks fine.',
       studyLink: 'Topic 4, Sections 5 and 6', time: 'about 30 minutes',
       scenario: `<p>Staff were told "look for the padlock". The <b>Certificate inspector</b> below lists four addresses.
@@ -15039,7 +15039,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 5 =====================
     't5-segment': {
       topic: 5, lab: 1, shortTitle: 'Segment the flat network with VLANs',
-      title: 'Topic 5 · Lab 1 — Segment the flat network with VLANs',
+      title: 'Segment the flat network with VLANs',
       objective: 'Break the single flat LAN into reception and clinical segments so one foothold no longer sees everything.',
       studyLink: 'Topic 5, Section 3', time: 'about 40 minutes',
       scenario: `<p>Everything at Riverstone shares one broadcast domain. Put clinical and reception traffic into
@@ -15069,7 +15069,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
 
     't5-portsec': {
       topic: 5, lab: 5, shortTitle: 'Lock down the access ports',
-      title: 'Topic 5 · Lab 5 — Lock down the reception and clinical ports',
+      title: 'Lock down the reception and clinical ports',
       objective: 'Stop rogue devices and switch-spoofing at the edge with port security and BPDU guard.',
       studyLink: 'Topic 5, Section 3', time: 'about 35 minutes',
       scenario: `<p>Waiting-room and desk network points are physically reachable by anyone. Harden the staff access
@@ -15102,7 +15102,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
 
     't5-dot1x': {
       topic: 5, lab: 7, shortTitle: 'Only staff devices on the clinical network', tools: ['dot1x'],
-      title: 'Topic 5 · Lab 7 — 802.1X: only staff devices on the clinical network',
+      title: '802.1X: only staff devices on the clinical network',
       objective: 'Require every device to authenticate before the switch lets it onto the clinical network.',
       studyLink: 'Topic 5, Sections 5 and 6; Topic 3', time: 'about 35 minutes',
       scenario: `<p>Port security stops a flood, but a determined visitor can still unplug a staff PC and connect their
@@ -15133,7 +15133,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 6 =====================
     't6-harden': {
       topic: 6, lab: 1, shortTitle: 'Harden a device to a baseline',
-      title: 'Topic 6 · Lab 1 — Harden a device to a secure baseline',
+      title: 'Harden a device to a secure baseline',
       objective: 'Apply the endpoint-hardening discipline to a managed device and confirm each control.',
       studyLink: 'Topic 6, Sections 1 and 2', time: 'about 35 minutes',
       scenario: `<p>Hardening is not only for laptops and servers. Every managed device needs a defensible baseline,
@@ -15172,7 +15172,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 3 — identity/MFA =====================
     't3-mfa': {
       topic: 3, lab: 2, shortTitle: 'Roll out MFA and kill shared logins', tools: ['identity'],
-      title: 'Topic 3 · Lab 2 — Roll out MFA and kill shared logins',
+      title: 'Roll out MFA and kill shared logins',
       objective: 'Make every staff account need a second factor, and remove the shared front-desk login.',
       studyLink: 'Topic 3, Sections 3 and 4', time: 'about 35 minutes',
       scenario: `<p>The <code>Identity-Server</code> holds Riverstone's staff accounts. Right now every account is
@@ -15203,7 +15203,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     },
     't3-lifecycle': {
       topic: 3, lab: 4, shortTitle: 'The leaver whose account still works', tools: ['identity'],
-      title: 'Topic 3 · Lab 4 — The joiner, mover and leaver',
+      title: 'The joiner, mover and leaver',
       objective: 'Run the account lifecycle: disable the leaver, add the starter, and remove the shared login.',
       studyLink: 'Topic 3, Section 6', time: 'about 35 minutes',
       scenario: `<p>A clinician, <b>J. Morrow</b>, left Riverstone three months ago but the account is still enabled and
@@ -15234,7 +15234,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 2 — malware =====================
     't2-worm': {
       topic: 2, lab: 6, shortTitle: 'Watch a worm spread on a flat network', tools: ['malware'],
-      title: 'Topic 2 · Lab 6 — Watch a worm spread on a flat network',
+      title: 'Watch a worm spread on a flat network',
       objective: 'See how far and fast a worm spreads from one phished PC when the network is flat.',
       studyLink: 'Topic 2, Section 1', time: 'about 25 minutes',
       scenario: `<p><code>PC-Reception1</code> is phished and becomes patient zero. Riverstone's network is flat: one
@@ -15264,7 +15264,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 5 — worm containment (callback) =============
     't5-worm-contain': {
       topic: 5, lab: 8, shortTitle: 'Contain the worm with segmentation', tools: ['malware'],
-      title: 'Topic 5 · Lab 8 — Contain the worm with segmentation',
+      title: 'Contain the worm with segmentation',
       objective: 'Prove that the segmentation you built stops the Topic 2 worm reaching the clinical systems.',
       studyLink: 'Topic 5, Section 3', time: 'about 30 minutes',
       scenario: `<p>In Topic 2 you watched a worm from <code>PC-Reception1</code> reach every system on the flat network.
@@ -15295,7 +15295,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 7 — ransomware =====================
     't7-ransomware': {
       topic: 7, lab: 6, shortTitle: 'Ransomware and the backups', tools: ['malware'],
-      title: 'Topic 7 · Lab 6 — Ransomware reaches the backups',
+      title: 'Ransomware reaches the backups',
       objective: 'See ransomware encrypt everything it can reach, and make the backup survive it.',
       studyLink: 'Topic 7, Section 6', time: 'about 30 minutes',
       scenario: `<p>Overnight, ransomware runs from <code>PC-Reception1</code>. It encrypts every file server and backup
@@ -15325,7 +15325,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 7 — backup / recovery =====================
     't7-recovery': {
       topic: 7, lab: 5, shortTitle: 'Prove the recovery works', tools: ['backup'],
-      title: 'Topic 7 · Lab 5 — A backup is not a backup until you restore it',
+      title: 'A backup is not a backup until you restore it',
       objective: 'Set a recovery position for the clinical records that survives an incident and is proven by a restore test.',
       studyLink: 'Topic 7, Section 6', time: 'about 30 minutes',
       scenario: `<p>The clinical records are Riverstone's most critical system. In the <b>Backup &amp; recovery</b> panel,
@@ -15357,7 +15357,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     // ===================== TOPIC 7 — SIEM =====================
     't7-siem': {
       topic: 7, lab: 2, shortTitle: 'Write alerts that earn their place', tools: ['siem'],
-      title: 'Topic 7 · Lab 2 — Write alerts that earn their place',
+      title: 'Write alerts that earn their place',
       objective: 'Catch the real incidents in the log without drowning the team in false alarms.',
       studyLink: 'Topic 7, Sections 2 and 3', time: 'about 35 minutes',
       scenario: `<p>The <code>Log-Server</code> is now a small SIEM. It has collected a night's events: three real
@@ -15385,7 +15385,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
 
     't7-logging': {
       topic: 7, lab: 1, shortTitle: 'Centralise the logs',
-      title: 'Topic 7 · Lab 1 — Centralise the logs and fix the clocks',
+      title: 'Centralise the logs and fix the clocks',
       objective: 'Send switch logs to the central log server with trustworthy, synchronised timestamps.',
       studyLink: 'Topic 7, Sections 1 and 2', time: 'about 30 minutes',
       scenario: `<p>Riverstone has a <code>Log-Server</code> at <code>192.168.1.40</code> but nothing sends to it, and the
@@ -15633,7 +15633,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
     function buildPanel(lab) {
         const badge = document.createElement('div');
         badge.className = 'cl-badge';
-        badge.innerHTML = `<span class="cl-topic">Topic ${lab.topic} · Lab ${lab.lab}</span>
+        badge.innerHTML = `<span class="cl-topic">Topic ${lab.topic}</span>
             <strong>Cyber Fundamentals Network Simulator</strong><span class="cl-sp"></span>
             <button id="cl-reload-starter" title="Reload the starting network">Reset lab</button>`;
         document.body.appendChild(badge);
@@ -15958,7 +15958,7 @@ window.COURSE_TOPO = {"__master__":{"devices":{"id-96c386c9-c8b7-45fa-b2b8-3ff60
         const groups = Object.keys(byTopic).sort((a, b) => a - b).map(t => `
             <div class="cl-topicgrp"><h4>Topic ${t}</h4>
             ${byTopic[t].map(id => `<a class="cl-labrow" href="?lab=${encodeURIComponent(id)}">
-                <strong>Lab ${CAT[id].lab}</strong> — ${esc(CAT[id].shortTitle || CAT[id].title)}</a>`).join('')}
+                ${esc(CAT[id].shortTitle || CAT[id].title)}</a>`).join('')}
             </div>`).join('');
         const modal = document.createElement('div');
         modal.className = 'cl-modal';
